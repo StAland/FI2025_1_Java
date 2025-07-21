@@ -5,27 +5,16 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(addieren(12.324, 34.122, 343.64));
         System.out.println(addieren(1, 2, 3));
+        System.out.println(durchschnittBerechnen(12.324, 34.122, 343.64));
 
-        boolean a = true;
-        boolean b = false;
-
-        System.out.println(a && b);
-        System.out.println(a || b);
-        System.out.println(!a);
-        System.out.println(a^b);
-
-        boolean ergebnis = (meinRandom() > 0.5) || a;
+        short a = 3;
+        short b = 5;
+        var c = (short)(a + b); //Buch Kapitel 2.4.10 Tabelle 2.12 + Abbildung 2.5
     }
 
-    public static double meinRandom(){
-        double ausgabe = Math.random();
-        System.out.println(ausgabe);
-        return ausgabe;
-    }
-
-    public static double durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
+    public static int durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
         var summe = zahl1 + zahl2 + zahl3;
-        var ergebnis = summe / 3;
+        int ergebnis = (int)summe / 3;
         return ergebnis;
     }
 
