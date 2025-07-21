@@ -8,13 +8,13 @@ public class Main {
     }
 
     public static double durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
-        double summe = zahl1 + zahl2 + zahl3;
-        double ergebnis = summe / 3;
+        var summe = zahl1 + zahl2 + zahl3;
+        var ergebnis = summe / 3;
         return ergebnis;
     }
 
     public static double addieren(double zahl1, double zahl2, double zahl3){
-        double summe = zahl1 + zahl2 + zahl3;
+        final double summe = zahl1 + zahl2 + zahl3; //final bedeutet nur eine einzige zuweisung
         return summe;
     }
 
@@ -23,3 +23,4 @@ public class Main {
         return summe;
     }
 }
+
