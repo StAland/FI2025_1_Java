@@ -3,28 +3,23 @@
 public class Main {
 
     public static void main(String[] args) {
-        //Datentypen:
-        int x = 42;         //Ganzzahl 32 bit
-        long y = 10000000;  //Ganzzahl 64 bit
-        short z = 12;       //Ganzzahl 16 bit
-        byte b = 10;        //Ganzzahl  8 bit
-        double d = 3.14;    //Gleitkommazahl 64 bit
-        float f = 1.5f;     //Gleitkommazahl 32 bit
-        char c = 'A';       //einzelnes Unicode-Zeichen
-        boolean bo = false; //Wahrheitswert
-        String s = "Hallo"; //Zeichenketten
+        System.out.println(addieren(12.324, 34.122, 343.64));
+        System.out.println(addieren(1, 2, 3));
+    }
 
+    public static double durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
+        double summe = zahl1 + zahl2 + zahl3;
+        double ergebnis = summe / 3;
+        return ergebnis;
+    }
 
+    public static double addieren(double zahl1, double zahl2, double zahl3){
+        double summe = zahl1 + zahl2 + zahl3;
+        return summe;
+    }
 
-
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public static int addieren(int zahl1, int zahl2, int zahl3){
+        int summe = zahl1 + zahl2 + zahl3;
+        return summe;
     }
 }
