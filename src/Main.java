@@ -1,21 +1,34 @@
 public class Main {
 
     public static void main(String[] args) {
-        double taxes = berechneSteuer(1000.0, 0.17);
-        System.out.println(taxes);
-        taxes = berechneSteuer(1000.0);
-        System.out.println(taxes);
+//        long fac = fact(20);
+//        System.out.println(fac);
+        double ergebnis = me(50.0);
+        System.out.println(ergebnis);
     }
 
-    public static double berechneSteuer(double amount, double tax){
-        double taxes = amount * tax;
-        // Hier kommt noch ne ganz tolle Überprüfung rein
-        return taxes;
+    public static double me(double number){
+        if (number < 0){
+            return 1;
+        }
+        return me(number-1) + me(number -2);
     }
 
-    public  static double berechneSteuer(double amount){
-        return berechneSteuer(amount, 0.19);
-    }
+    public static long fact(long number){
 
+//        long ergebnis = 1;                    Iterativ statt rekursiv
+//        for (long i = 2; i <= number; i++){
+//            ergebnis *= i;
+//        }
+
+        if (number < 0){
+            return -1;
+        }
+        if (number == 0 || number == 1){
+            return 1;
+        }
+        long ergebnis = fact(number - 1);
+        return number * ergebnis;
+    }
 }
 
