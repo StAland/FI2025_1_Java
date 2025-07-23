@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
     public static void main(String[] args) {
@@ -10,6 +8,10 @@ public class Main {
         short a = 3;
         short b = 5;
         var c = (short)(a + b); //Buch Kapitel 2.4.10 Tabelle 2.12 + Abbildung 2.5
+    }
+
+    public static int minZahl(int a, int b){
+        return (a>b) ? b : a;
     }
 
     public static int durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
