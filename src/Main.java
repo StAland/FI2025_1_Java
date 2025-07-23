@@ -1,33 +1,37 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(addieren(12.324, 34.122, 343.64));
-        System.out.println(addieren(1, 2, 3));
-        System.out.println(durchschnittBerechnen(12.324, 34.122, 343.64));
+        int zahl = 1;
+        int inkrement = 1;
+        while(zahl < 1000){
+            if(zahl % 2 == 0){
+                zahl /= 2;
+                System.out.println(zahl);
+                continue;
+            }
+            zahl += inkrement;
+            System.out.println(zahl);
+            inkrement++;
+        }
 
-        short a = 3;
-        short b = 5;
-        var c = (short)(a + b); //Buch Kapitel 2.4.10 Tabelle 2.12 + Abbildung 2.5
-    }
+//        for(int i = 1; i <= 100; i++){
+//            if(i == 77){
+//                break;
+//            }
+//            if (i % 7 == 0){
+//                System.out.println("beep");
+//                continue;
+//            }
+//            System.out.println(i);
+//        }
 
-    public static int minZahl(int a, int b){
-        return (a>b) ? b : a;
-    }
-
-    public static int durchschnittBerechnen(double zahl1, double zahl2, double zahl3){
-        var summe = zahl1 + zahl2 + zahl3;
-        int ergebnis = (int)summe / 3;
-        return ergebnis;
-    }
-
-    public static double addieren(double zahl1, double zahl2, double zahl3){
-        final var summe = zahl1 + zahl2 + zahl3; //final bedeutet nur eine einzige zuweisung
-        return summe;
-    }
-
-    public static int addieren(int zahl1, int zahl2, int zahl3){
-        var summe = zahl1 + zahl2 + zahl3;
-        return summe;
+//        int[] zahlen = {10, 25, 235, 912, 23};
+//        int[] zahlen2 = {324, 12, 123, 3443};
+//        int summe = 0;
+//        for (int zahl : zahlen2){
+//            summe += zahl;
+//        }
+//        System.out.println(summe);
     }
 }
 
