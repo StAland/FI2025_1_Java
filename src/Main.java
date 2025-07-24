@@ -1,9 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        var motor = new Motor(225, 13);
-        var bremse = new Bremsen(36);
-        var auto = new Auto(motor, bremse, 3560.3, 0);
+
+        var auto = AutoFabrik.autoBauen(AutoFabrik.AutoModell.Ferrari);
 
         auto.beschleunigen(25, 3);
         System.out.println(auto.getAktuelleGeschwindigkeit());
