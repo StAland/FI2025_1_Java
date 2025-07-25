@@ -25,10 +25,10 @@ public class Auto {
 
     /**
      *
-     * @param min Dauer in Minuten
+     * @param dauer Dauer in Minuten
      */
-    public void fahren(float min){
-        this.kilometerstand += this.aktuelleGeschwindigkeit * min/60;
+    public void fahren(float dauer){
+        this.kilometerstand += this.aktuelleGeschwindigkeit * dauer/60;
     }
 
     /**
