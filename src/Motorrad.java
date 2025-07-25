@@ -16,4 +16,9 @@ public class Motorrad extends Fahrzeug {
         super.info();
         System.out.println("Beiwagen: " + (hatBeiwagen ? "Ja" : "Nein"));
     }
+
+    @Override
+    public void fahren(float dauer) {
+        System.out.println("Das Motorrad fährt");
+    }
 }

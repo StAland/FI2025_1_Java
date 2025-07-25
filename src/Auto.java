@@ -1,4 +1,4 @@
-public class Auto {
+public class Auto extends Fahrzeug {
     private Motor motor;
     private Bremsen bremse;
     private double kilometerstand;
@@ -16,7 +16,8 @@ public class Auto {
         return kilometerstand;
     }
 
-    public Auto(Motor motor, Bremsen bremse, double kilometerstand, int aktuelleGeschwindigkeit) {
+    public Auto(Motor motor, Bremsen bremse, double kilometerstand, int aktuelleGeschwindigkeit, String modell, int baujahr) {
+        super(modell, baujahr);
         this.motor = motor;
         this.bremse = bremse;
         this.kilometerstand = kilometerstand;

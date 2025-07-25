@@ -11,4 +11,9 @@ public class LKW extends Fahrzeug{
         super.info();
         System.out.println("Ladegewicht: " + ladegewicht + " Tonnen");
     }
+
+    @Override
+    public void fahren(float dauer) {
+        System.out.println("Der LKW fährt für " + dauer + " Minuten");
+    }
 }

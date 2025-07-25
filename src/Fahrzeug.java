@@ -1,4 +1,4 @@
-public class Fahrzeug {
+public abstract class Fahrzeug {
     protected String marke;
     protected int baujahr;
 
@@ -14,4 +14,6 @@ public class Fahrzeug {
     public void info(){
         System.out.println("Marke: " + marke + ", Baujahr: " + baujahr);
     }
+
+    public abstract void fahren(float dauer);
 }
